@@ -1,5 +1,5 @@
 class DirectorMovieSerializer < ActiveModel::Serializer
-  attributes :id, :name, :birthplace, :female_director
+  attributes :title, :year
 
-  has_many :movies, serializer: DirectorMovieSerializer
+  has_many :reviews
 end
